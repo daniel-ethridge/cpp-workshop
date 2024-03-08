@@ -65,9 +65,41 @@ Open the `CMakeLists.txt` file. Let's get a simple project going.
 - `cmake -B build -S .`
 - `cmake --build build`
 
-## Installing (Just to note; we don't need to do this right now)
-- `cd <PROJ_DIR>/build`
-- `cmake install .`
-
 # Adding Other Headers and Sources
 Let's put some files in include and src. What functionality do we want?
+
+# Some C++ things
+## Syntax things
+(We can do this fast)
+- for loops
+- while loops
+- function syntax
+- classes
+    - Constructors (there are actually a lot: https://www.geeksforgeeks.org/constructors-c/)
+    - Destructors
+- structs
+
+## Memory allocation
+### Stack vs heap
+https://www.geeksforgeeks.org/stack-vs-heap-memory-allocation/
+
+### Pointers and references
+We don't use malloc. Nowadays, we don't really even use new. Best thing to use: smartpointers
+
+## The standard library
+The standard library basically has what we might consider "native" C++ functionality.
+- Strings
+- Vectors
+- File io
+- Plenty more
+
+# Let's put some functionality in a library and install that
+We can create another directory to house the library code. We'll create another CMakeLists.txt
+
+# C++ tools
+- QT and QML
+- JUCE (for music and audio)
+- Cool libraries
+    - IMGui (GUI stuff)
+    - QCustomplot (for use with QML)
+- FFTW (FFT library)
