@@ -1,3 +1,21 @@
+# C++ Resources (How did I learn?)
+I learned all this very slowly over time. Often times it was a frustrating experience, so my goal is to:
+- Catalyze the starting experience for you all
+- Explain some seemingly simple things that took a while for me to understand
+- Provide all the resources that I've used over time to learn.
+- Show you some cool libraries to use for different things.
+
+# How did I learn?
+- Youtube Channels
+    - The Cherno (specifically https://www.youtube.com/playlist?list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb)
+    - Derek Banas (https://www.youtube.com/playlist?list=PLGLfVvz_LVvQ9S8YSV0iDsuEU8v11yP9M). <i>Note that Derek also teaches a lot of other things that he somehow learned. Examples include React (frontend framework), Blender (3D modeling), Qt (C++ framework with GUI capabilities), statistics, and trigonometry.</i>
+    - (For QT and QML): https://www.youtube.com/playlist?list=PL6CJYn40gN6hdNC1IGQZfVI707dh9DPRc 
+- Stackoverflow (Hit or miss here. There is a bit of an art to knowing what is actually helpful.)
+- Documentation
+    - https://en.cppreference.com/w/
+    - https://cplusplus.com/
+- Asking for help!
+
 # Preprocessing, Compilation, and Linking
 I know what these steps are but can never remember the best way to describe them, so this is largely taken from https://stackoverflow.com/questions/6264249/how-does-the-compilation-linking-process-work.
 ## Preprocessing
@@ -34,4 +52,22 @@ I like to use:
 ```
 
 # CMake
-Open the `CMakeLists.txt` file.
+Open the `CMakeLists.txt` file. Let's get a simple project going. 
+
+## Generating Build Files and Building
+### Method A
+- `cd <PROJ_DIR>/build`
+- `cmake .. `
+- `cmake --build .`
+
+### Method B
+- `cd <PROJ_DIR>`
+- `cmake -B build -S .`
+- `cmake --build build`
+
+## Installing (Just to note; we don't need to do this right now)
+- `cd <PROJ_DIR>/build`
+- `cmake install .`
+
+# Adding Other Headers and Sources
+Let's put some files in include and src. What functionality do we want?
